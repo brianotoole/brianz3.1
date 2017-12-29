@@ -149,7 +149,9 @@ body.nav-open {
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    &:hover,&:focus {background: $color-primary;}
+    &:hover,&:focus {
+      background: $color-primary;
+    }
   }
 }
 
