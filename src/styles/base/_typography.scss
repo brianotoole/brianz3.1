@@ -6,7 +6,8 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
   font-family: $font-heading;
   font-weight: normal;
 	word-wrap: break-word;
-	letter-spacing: 0.2px
+	letter-spacing: 0.2px;
+	text-transform: uppercase;
 }
 
 h1,

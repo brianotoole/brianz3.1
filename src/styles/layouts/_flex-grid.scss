@@ -1,21 +1,5 @@
 // FLEXBOX GRID
 // USAGE: http://hugeinc.github.io/flexboxgrid-sass/
-.container {
-  //width: 1200px;
-  //margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  @media (max-width: $bp-md) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-.container-fluid {
-  margin: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .row {
   display: flex;
