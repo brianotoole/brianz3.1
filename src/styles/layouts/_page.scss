@@ -29,10 +29,24 @@
   }
 }
 
+.half {
+  width: calc(50% - 15px);
+  @media (max-width: $bp-md) {
+    width: 100%;
+  } 
+}
+.left {
+  padding-right: 8.5%;
+}
+
 // Section-specific
 .section-wrap {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  @media (max-width: $bp-md) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 }
 
 .section-hero {
@@ -40,7 +54,33 @@
     padding-top: 200px;
     margin-bottom: 125px;
     text-transform: none;
-    animation: fadeIn 2500ms ease-out;
+    animation: fadeIn 1.5s ease-in;
+  }
+  .hero-scroll {
+    position: absolute;
+    width: auto;
+    bottom: 140px;
+    margin-left: 15px;
+    z-index: 500;
+    a {
+      color: $color-body;
+      font-size: rem(14);
+      font-style: italic;
+      text-decoration: none;
+      transition: color 0.3s ease-out;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1em;
+      height: 1em;
+      margin-left: -9px;
+      border-left: 1px solid rgba($color-body, 0.8);
+      border-bottom: 1px solid rgba($color-body, 0.8);
+      transform: rotate(-45deg);
+      animation: scrollDown 1.5s infinite;
+    }
   }
 }
 
@@ -50,40 +90,114 @@
   margin-bottom: 20px;
 }
 
+.section-hero {
+  position: relative;
+  color: $color-body;
+  background: $color-gray;
+  background-image: url('/assets/images/home-bg-dust.png');
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh; //full-height
+  display: flex; //vertical center
+  flex-flow: column wrap;
+  justify-content: center;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('/assets/images/home-bg.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 377px 700px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+}
+
 
 // Page-specific
-.page-home {
-  .section-hero {
-    position: relative;
-    background-image: url('/assets/images/home-bg-dust.png');
-    background-position: center center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-image: url('/assets/images/home-bg.png');
-      background-position: bottom right;
-      background-repeat: no-repeat;
-      background-size: 377px 700px;
-      width: 100%;
-      height: 100%;
-      z-index: 3;
+.page-home {}
+
+// Page-interior
+.page-interior {
+  .interior-content {}
+  .interior-title {}
+}
+
+// Page-about
+// About intro
+.about-intro {}
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-content {}
+.about-service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 60px 0 0;
+  .service-item {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    @media (max-width: $bp-md) {
+      border-bottom: 1px solid #eee;
     }
   }
 }
 
-// Page-interior
-.page-interior {
-  .section-hero {
-    margin-bottom: 0;
-  }
-  .interior-content {
-    padding-bottom: 60px;
+// About Work Process
+.work-process {
+  background-color: $color-black;
+  color: $color-white;
+  background-image: url('');
+  background-repeat: no-repeat;
+}
+.work-process-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .work-process-content {
+    padding-left: 60px;
+    position: relative;
+    &:before {
+      color: #A7A9AC;
+      content: attr(data-title);
+      font-size: rem(14);
+      left: 0;
+      line-height: 3;
+      position: absolute;
+      margin-top: -8px;
+      font-style: italic;
+    }
   }
 }
+.work-process-heading {
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    background-color: $color-white;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 
 // projects-list-limit blocks
 .project-block {
@@ -101,15 +215,6 @@
   img {
     margin-bottom: 0;
   }
-}
-.half {
-  width: calc(50% - 15px);
-  @media (max-width: $bp-md) {
-    width: 100%;
-  } 
-}
-.left {
-  padding-right: 8.5%;
 }
 
 // projects-list-all blocks

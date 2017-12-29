@@ -4,19 +4,22 @@ bodyclass: page-interior
 ---
 <div class="page-interior">
 
-<section class="section-hero">
+<section class="section-hero section-wrap">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-10">
         <h1 class="hero-title">{{ page.hero }}</h1>
+        <div class="hero-scroll">
+          <a href="#more"><span></span></a>
+        </div>
       </div><!--/.col-->
     </div><!--<!--/.row-->
   </div><!--/.container-->
 </section>
 
-<section class="interior-content">
+<div class="interior-content">
   {{ content }}
-</section>
+</div>
 
 
 </div><!--/.page-interior-->
