@@ -1,33 +1,10 @@
 // Buttons
 @mixin button-bg($bg) {
   background-color: $bg;
-  position: relative;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  transition-property: color;
-  transition-duration: 0.3s;
-  &:before {
-    text-decoration: none;
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: $color-black;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-  }
+  transition: all 0.2s linear;
   &:hover {
     color: $color-white;
-    &:before {
-      transform: scaleX(1);
-    }
+    background-color: darken($bg, 15%);
   }
 }
 

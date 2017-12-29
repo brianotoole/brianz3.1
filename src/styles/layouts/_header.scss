@@ -46,6 +46,15 @@
     max-width: 150px;
   }
 }
+.header-contact-btn {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  z-index: 300;
+  @media (max-width: $bp-md) {
+    display: none;
+  }
+}
 // Nav primary
 .nav-primary {
   display: none;
@@ -70,7 +79,7 @@
     }
   }
   a {
-    margin: 0 20px;
+    margin: 0;
     padding-bottom: 5px;
     color: $color-white;
     font-size: rem(18);
@@ -87,7 +96,7 @@
       left: 50%;
       right: 50%;
       bottom: 0;
-      background: $color-white;
+      background: $color-secondary;
       height: 2px;
       transition-property: left, right;
       transition-duration: 0.3s;
@@ -95,7 +104,7 @@
     }
     &:hover {
       text-decoration: none;
-      color: $color-white;
+      color: $color-secondary;
     }
     &:hover:before{
       left: 0;
