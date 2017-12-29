@@ -4,7 +4,7 @@ bodyclass: page-interior
 ---
 <div class="page-interior">
 
-<section class="section-wrap section-hero">
+<section class="section-hero">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-10">
@@ -14,6 +14,13 @@ bodyclass: page-interior
   </div><!--/.container-->
 </section>
 
-{{ content }}
+<section class="interior-content">
+  <div class="container-fluid">
+    <div class="row">
+     {{ content }}
+    </div>
+  </div><!--/.container-fluid-->
+</section>
+
 
 </div><!--/.page-interior-->
