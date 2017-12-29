@@ -1051,7 +1051,7 @@ p {
   position: fixed;
   top: 0;
   left: auto;
-  width: 425px;
+  width: 375px;
   height: 100px;
   margin: 0;
   padding: 38px 35px 38px 0;
@@ -1095,9 +1095,9 @@ p {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   .nav-primary li {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
