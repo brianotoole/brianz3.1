@@ -1,25 +1,39 @@
 // Header
 
 .header {
-  position: absolute;
+  overflow: hidden;
+  position: relative;
+}
+.header-main-layout {
+  position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  width: 45%;
-  height: auto;
+  left: auto;
+  width: 425px;
+  height: 100px;
   margin: 0;
-  padding: 45px 30px;
+  padding: 38px 35px 38px 0;
   background-color: $color-body;
   z-index: 300;
-  animation: slideInRight 0.2s ease-in;
+  //animation: slideInRight 0.2s ease-in;
+  &:before {
+    content: '';
+    background-color: $color-body;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 28%;
+    height: 100px;
+  }
 }
 // Logo
-.logo {
+.logo-container {
+  position: fixed;
+  left: 30px;
   animation: fadeIn 250ms ease-out;
   animation-delay: 20ms;
   animation-duration: 250ms;
   animation-fill-mode: forwards;
-  a {
+  span {
     color: $color-white;
     font-weight: 700;
   }
@@ -37,7 +51,7 @@
   list-style-type: none;
   @media (min-width: $bp-md) {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   li {
     flex: 0 0 auto;
