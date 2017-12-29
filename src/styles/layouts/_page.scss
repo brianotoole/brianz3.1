@@ -168,7 +168,7 @@
     padding-left: 60px;
     position: relative;
     &:before {
-      color: #A7A9AC;
+      color: $color-secondary;
       content: attr(data-title);
       font-size: rem(14);
       left: 0;

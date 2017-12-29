@@ -158,7 +158,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #2eb993;
+  color: #ff6e6e;
   text-align: left;
   caption-side: bottom; }
 
@@ -306,7 +306,8 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.875rem; }
+  font-size: 1.875rem;
+  letter-spacing: 1px; }
   @media (max-width: 50rem) {
     h4,
     .h4 {
@@ -314,7 +315,9 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.375rem; }
+  font-size: 1.375rem;
+  letter-spacing: 1px;
+  font-weight: 700; }
   @media (max-width: 50rem) {
     h5,
     .h5 {
@@ -322,7 +325,9 @@ h5,
 
 h6,
 .h6 {
-  font-size: 1.125rem; }
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  font-weight: 700; }
   @media (max-width: 50rem) {
     h6,
     .h6 {
@@ -1529,7 +1534,7 @@ body.nav-open {
     padding-left: 60px;
     position: relative; }
     .work-process-wrapper .work-process-content:before {
-      color: #A7A9AC;
+      color: #ff6e6e;
       content: attr(data-title);
       font-size: 0.875rem;
       left: 0;
@@ -1632,7 +1637,7 @@ body.nav-open {
     min-height: 500px;
     margin: 0;
     padding: 50px;
-    border: 2px solid #2eb993;
+    border: 2px solid #ff6e6e;
     background: transparent;
     transition: background 0.2s ease-in-out; }
     @media (max-width: 50rem) {
@@ -1698,7 +1703,7 @@ body.nav-open {
         -webkit-transform: scaleX(1);
                 transform: scaleX(1); }
   .btn.secondary {
-    background-color: #2eb993;
+    background-color: #ff6e6e;
     position: relative;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -1820,7 +1825,7 @@ body.nav-open {
       margin-left: 12px;
       transition: margin-left 0.2s ease-in-out; }
     .btn.arrow:hover {
-      color: #2eb993; }
+      color: #ff6e6e; }
       .btn.arrow:hover:after {
         margin-left: 15px; }
 
@@ -1831,7 +1836,7 @@ body.nav-open {
   color: #0f2805; }
 
 .text-secondary {
-  color: #2eb993; }
+  color: #ff6e6e; }
 
 .text-body {
   color: #111; }
@@ -1845,7 +1850,7 @@ body.nav-open {
   color: #fff; }
 
 .bg-secondary {
-  background: #2eb993;
+  background: #ff6e6e;
   color: #111; }
 
 .bg-black {
@@ -1915,6 +1920,9 @@ body.nav-open {
 
 .text-right {
   text-align: right; }
+
+.text-no-transform {
+  text-transform: none; }
 
 @media (max-width: 50rem) {
   .hidden-phone {
