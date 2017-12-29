@@ -3,27 +3,26 @@ layout: default
 bodyclass: post
 ---
 <div class="post">
-
-<section class="section-wrap bg-img-cover">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <h1 class="section-title">{{ page.title }}</h1>
-        <h3 class="section-subtitle">{{ page.subtitle }}</h3>
-      </div><!--/.col-->
-    </div><!--<!--/.row-->
-  </div><!--/.container-->
-</section>
-
-
-<section class="section-wrap bg-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        {{ content }}
-      </div><!--/.col-->
-    </div><!--/.row-->
-  </div><!--/.container-->
-</section>
-
+    
+    <section class="section-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-10">
+            <h1 class="hero-title">{{ page.title }}</h1>
+          </div><!--/.col-->
+        </div><!--<!--/.row-->
+      </div><!--/.container-->
+    </section>
+    
+    <section class="interior-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2 entry-content">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
 </div><!--/.post-->

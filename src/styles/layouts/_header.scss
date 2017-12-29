@@ -24,6 +24,9 @@
     width: 28%;
     height: 100px;
   }
+  @media (max-width: $bp-md) {
+    width: 100%;
+  }
 }
 // Logo
 .logo-container {
@@ -140,26 +143,31 @@ body.nav-open {
   position: fixed;
   overflow-y: hidden;
   width: 100%;
-  .header {
-    background: black;
+  $faster: 9ms;
+  li {
+    opacity: 0;
   }
+  @for $index from 1 through 8 {
+    li:nth-child(#{$index}) {
+      animation: fadeIn 250ms ease-out;
+      animation-delay: (250ms - ($faster * $index)) * $index;
+      animation-duration: 250ms;
+      animation-fill-mode: forwards;
+    }
+  } 
 }
 
 .nav-mobile-wrap {
   margin: 0;
   padding: 0;
+  padding-top: 100px;
   list-style-type: none;
-  li {
-    border-bottom: 1px solid $color-white;
-    &:last-child {
-      border-bottom: none;
-    }
-  }
+  li {}
   a {
     display: block;
-    padding: calc-em(10px) 0;
+    padding: 15px 0;
     color: $color-white;
-    font-size: calc-em(20px);
+    font-size: rem(20);
     font-weight: 700;
     text-align: center;
     text-decoration: none;
