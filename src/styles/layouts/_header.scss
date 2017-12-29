@@ -19,14 +19,20 @@
   }
 }
 // Logo
-.logo a {
-  color: white;
-  font-weight: 700;
-}
-.logo img {
-  margin: 0;
-  width: 100%;
-  max-width: 200px;
+.logo {
+  animation: fadeIn 250ms ease-out;
+  animation-delay: 20ms;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+  a {
+    color: $color-white;
+    font-weight: 700;
+  }
+  img {
+    margin: 0;
+    width: 100%;
+    max-width: 150px;
+  }
 }
 // Nav primary
 .nav-primary {
@@ -40,6 +46,16 @@
   }
   li {
     flex: 0 0 auto;
+    opacity: 0;
+  }
+  $faster: 9ms;
+  @for $index from 1 through 8 {
+    li:nth-child(#{$index}) {
+      animation: fadeIn 250ms ease-out;
+      animation-delay: (250ms - ($faster * $index)) * $index;
+      animation-duration: 250ms;
+      animation-fill-mode: forwards;
+    }
   }
   a {
     margin: 0 20px;

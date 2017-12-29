@@ -1,0 +1,78 @@
+// Buttons
+@mixin button-bg($bg) {
+  background-color: $bg;
+  position: relative;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  transition-property: color;
+  transition-duration: 0.3s;
+  &:before {
+    text-decoration: none;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-black;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  &:hover {
+    color: $color-white;
+    &:before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.btn {
+  margin: 0;
+  margin-top: 10px;
+  min-width: 225px;
+  padding: 12px 25px;
+  font-family: $font-body;
+  font-size: rem(14);
+  color: $color-white;
+  background-color: $color-primary;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  white-space: nowrap;
+  &.primary {
+    @include button-bg($color-primary);
+  }
+  &.secondary {
+    @include button-bg($color-secondary);
+  }
+  &.white {
+    @include button-bg($color-white);
+    color: $color-primary;
+  }
+  &.transparent {
+    @include button-bg(transparent);
+    border: 1px solid $color-black;
+    color: $color-black;
+  }
+  &.rounded {
+    border-radius: 100px;
+  }
+  &.icon {
+    //background-image: url();
+    background-position: 13px 13px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-left: 48px;
+    &.icon-name {
+      //background-image: url('../assets/img/icon-name.png');
+    }
+  }
+}
