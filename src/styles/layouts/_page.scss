@@ -50,6 +50,10 @@
 .page-home {
   .section-hero {
     position: relative;
+    background-image: url('/assets/images/home-bg-dust.png');
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     &:after {
       content: '';
       position: absolute;

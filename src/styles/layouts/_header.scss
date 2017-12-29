@@ -11,12 +11,7 @@
   padding: 45px 30px;
   background-color: $color-body;
   z-index: 300;
-  transform: translateY(0);
-  transition: background 0.2s ease-in;
-  &.is-fixed {
-    position: fixed;
-    //background-color: $color-body;
-  }
+  animation: slideInRight 0.2s ease-in;
 }
 // Logo
 .logo {

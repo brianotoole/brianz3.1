@@ -158,7 +158,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #3a580e;
+  color: #006073;
   text-align: left;
   caption-side: bottom; }
 
@@ -1054,11 +1054,8 @@ p {
   padding: 45px 30px;
   background-color: #111;
   z-index: 300;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  transition: background 0.2s ease-in; }
-  .header.is-fixed {
-    position: fixed; }
+  -webkit-animation: slideInRight 0.2s ease-in;
+          animation: slideInRight 0.2s ease-in; }
 
 .logo {
   -webkit-animation: fadeIn 250ms ease-out;
@@ -1329,7 +1326,11 @@ body.nav-open {
   margin-bottom: 20px; }
 
 .page-home .section-hero {
-  position: relative; }
+  position: relative;
+  background-image: url("/assets/images/home-bg-dust.png");
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
   .page-home .section-hero:after {
     content: '';
     position: absolute;
@@ -1426,7 +1427,7 @@ body.nav-open {
         -webkit-transform: scaleX(1);
                 transform: scaleX(1); }
   .btn.secondary {
-    background-color: #3a580e;
+    background-color: #006073;
     position: relative;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -1542,7 +1543,7 @@ body.nav-open {
   color: #0f2805; }
 
 .text-secondary {
-  color: #3a580e; }
+  color: #006073; }
 
 .text-body {
   color: #111; }
@@ -1556,7 +1557,7 @@ body.nav-open {
   color: #fff; }
 
 .bg-secondary {
-  background: #3a580e;
+  background: #006073;
   color: #111; }
 
 .bg-black {
@@ -1666,5 +1667,21 @@ body.nav-open {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3MvYXBwLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
