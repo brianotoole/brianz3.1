@@ -120,26 +120,23 @@
 }
 
 // Page-specific
-.page-home {
-  .section-hero {
-    background-image: url('/assets/images/home-bg-dust.png');
-  }
-}
-
 // Page-interior
 .page-interior {
   .interior-content {}
   .interior-title {}
 }
 
-// Project-interior
-.project-interior {
+// Page-home
+.page-home {
   .section-hero {
-    background-image: none; //inherits project bg color
+    background-image: url('/assets/images/home-bg-dust.png');
   }
 }
 
+
+
 // Page-about
+.page-about {}
 // About intro
 .about-intro {}
 .about-wrapper {
@@ -192,6 +189,13 @@
   }
 }
 
+
+// Project-interior
+.project-interior {
+  .section-hero {
+    background-image: none; //inherits project bg color
+  }
+}
 
 // projects-list-limit blocks
 .project-block {
@@ -271,16 +275,13 @@
     margin: 20px;
     padding: 50px;
     color: $color-white;
-    background: $color-blue;
+    background: $color-green1;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out;
     &:nth-child(2n) {
-      background: $color-black;
+      background: $color-green2;
     }
     &:nth-child(3n) {
-      background: $color-teal;
-    }
-    &:nth-child(4n) {
-      background: $color-orange;
+      background: $color-green3;
     }
     @media (max-width: $bp-md) {
       flex-basis: calc(100% - 40px);

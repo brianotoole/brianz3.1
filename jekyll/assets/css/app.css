@@ -2072,9 +2072,6 @@ body.nav-open {
 .page-home .section-hero {
   background-image: url("/assets/images/home-bg-dust.png"); }
 
-.project-interior .section-hero {
-  background-image: none; }
-
 .about-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2131,6 +2128,9 @@ body.nav-open {
       position: absolute;
       margin-top: -8px;
       font-style: italic; }
+
+.project-interior .section-hero {
+  background-image: none; }
 
 .project-block {
   border-top: 1px solid #D1D3D4;
@@ -2222,14 +2222,12 @@ body.nav-open {
     margin: 20px;
     padding: 50px;
     color: #fff;
-    background: #3556FA;
+    background: #7FA6A1;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out; }
     .posts-wrapper .post-item:nth-child(2n) {
-      background: #000; }
+      background: #B8D9B8; }
     .posts-wrapper .post-item:nth-child(3n) {
-      background: #42CAEB; }
-    .posts-wrapper .post-item:nth-child(4n) {
-      background: #F05B42; }
+      background: #D6EDBD; }
     @media (max-width: 50rem) {
       .posts-wrapper .post-item {
         -ms-flex-preferred-size: calc(100% - 40px);
@@ -2352,11 +2350,14 @@ body.nav-open {
   background: #f5f5f5;
   color: #111; }
 
-.bg-teal {
-  background: #42CAEB; }
+.bg-green1 {
+  background: #7FA6A1; }
 
-.bg-orange {
-  background: #F05B42; }
+.bg-green2 {
+  background: #B8D9B8; }
+
+.bg-green3 {
+  background: #D6EDBD; }
 
 .full-height {
   height: 100vh; }
