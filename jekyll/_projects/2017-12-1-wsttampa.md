@@ -2,10 +2,10 @@
 layout: project
 featured-home: true
 bodyclass: project
-title: Another project
+title: Water Street Tampa
 description: Provided strategy for user experience, technology selection, and web development for a comprehensive digital redesign
 date: 2015-04-01
-img: project-1.png
+img: project-wst.jpg
 link: link.com
 bgcolor: 0780e2
 textcolor: ffffff

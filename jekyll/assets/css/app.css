@@ -890,8 +890,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.875rem;
-  letter-spacing: 1px; }
+  font-size: 1.875rem; }
   @media (max-width: 50rem) {
     h4,
     .h4 {
@@ -900,7 +899,6 @@ h4,
 h5,
 .h5 {
   font-size: 1.375rem;
-  letter-spacing: 1px;
   font-weight: 700; }
   @media (max-width: 50rem) {
     h5,
@@ -910,7 +908,6 @@ h5,
 h6,
 .h6 {
   font-size: 1.125rem;
-  letter-spacing: 1px;
   font-weight: 700; }
   @media (max-width: 50rem) {
     h6,
@@ -1776,6 +1773,7 @@ p {
     margin: 0;
     padding-bottom: 5px;
     color: #fff;
+    font-family: "Lora", serif;
     font-size: 1.125rem;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -2043,6 +2041,7 @@ body.nav-open {
             animation: scrollDown 1.5s infinite; }
 
 .section-heading {
+  font-size: 0.875rem;
   margin-bottom: 20px; }
 
 .section-hero {
@@ -2108,9 +2107,7 @@ body.nav-open {
 
 .work-process {
   background-color: #000;
-  color: #fff;
-  background-image: url("");
-  background-repeat: no-repeat; }
+  color: #fff; }
 
 .work-process-wrapper {
   display: -webkit-box;
@@ -2164,16 +2161,26 @@ body.nav-open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px 0; }
+  padding: 50px 0;
+  transition: all 0.2s ease-in-out; }
   @media (max-width: 50rem) {
     .project-block {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; } }
+  .project-block .left {
+    padding-top: 10%; }
+  .project-block a {
+    text-decoration: none; }
+  .project-block:hover .btn.arrow, .project-block:focus .btn.arrow {
+    color: #ff6e6e; }
+    .project-block:hover .btn.arrow:after, .project-block:focus .btn.arrow:after {
+      margin-left: 14px; }
   .project-block * {
-    padding: 10px 0; }
+    text-transform: none; }
   .project-block img {
+    position: relative;
     margin-bottom: 0; }
 
 .project-block-lg {
@@ -2441,6 +2448,29 @@ body.nav-open {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1; }
+
+.hvr-underline-from-left {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden; }
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: #ff6e6e;
+  height: 2px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out; }
+
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0; }
 
 @-webkit-keyframes fadeIn {
   from {
