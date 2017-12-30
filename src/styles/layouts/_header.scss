@@ -1,8 +1,10 @@
 // Header
 
 .header {
+  min-height: 50px; //half height of .header-main-layout
   overflow: hidden;
   position: relative;
+  background-image: url('/assets/images/home-bg-dust.png');
 }
 .header-main-layout {
   position: fixed;

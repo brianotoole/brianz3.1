@@ -1,14 +1,14 @@
 {% for project in site.projects %}
 
-<div class="project-block-lg">
+<div class="project-block hvr-underline-from-left">
   <div class="half left">
-    <img src="{{site.baseurl}}/assets/images/{{project.img}}" alt="{{ project.title }}">
-  </div><!--/.left-->
-  <div class="half right">
     <h4 class="">{{ project.title }}</h4>
     <p>{{ project.description }}</p>
     <a class="btn arrow" href="{{ project.url }}">Explore Project</a>
+  </div><!--/.left-->
+  <div class="half right">
+    <img src="{{site.baseurl}}/assets/images/{{project.img}}" alt="{{ project.title }}">
   </div><!--/.right-->
-</div><!--<!--/.project-block-lg-->
+</div><!--<!--/.project-block-->
 
 {% endfor %}

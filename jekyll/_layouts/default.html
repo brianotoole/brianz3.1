@@ -2,7 +2,9 @@
 <html>
 {% include head.html %}
 <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% else %}{{ layout.bodyclass }}{% endif %}">
+<header class="header">
 {% include header.html %}
+</header>
 <div class="site-wrapper">
   {{ content }}
 </div><!--/.site-wrapper-->

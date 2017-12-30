@@ -1,16 +1,48 @@
+--- 
+layout: default 
+bodyclass: project
 ---
-layout: default
----
+
 <div class="project-interior">
-    
-    <section class="section-wrap section-hero bg-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-10">
-              <h1 class="hero-title">{{ page.title }}</h1>
-            </div><!--/.col-->
-          </div><!--<!--/.row-->
-        </div><!--/.container-->
-      </section>
+
+  <section class="section-hero" style="background-color:#{{ page.bgcolor }}!important;color:#{{ page.textcolor }};">
+    <div class="container">
+      <div class="row hero-content">
+        <div class="col-xs-12 col-sm-10">
+          <h1 class="hero-title">{{ page.title }}</h1>
+          <h6 class="hero-subtitle">{{ page.subtitle }}</h6>
+          <div class="hero-scroll">
+            <a href="#more"><span></span></a>
+          </div><!--/.hero-scroll-->
+        </div><!--/.col-->
+      </div><!--<!--/.row-->
+    </div><!--/.container-->
+  </section>
+
+  <section class="project-details about-intro section-wrap group">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="half left">
+          <h6 class="section-heading">Background</h6>
+            <div class="about-content">
+              <h5 class="text-secondary text-no-transform pad-top">Overview</h5>
+              <p>{{ page.overview }}</p>
+              <h5 class="text-secondary text-no-transform pad-top">Goals</h5>
+              <p>{{ page.goals }}</p>
+            </div><!--/.about-content-->
+          </div><!--/.half.left-->
+          <div class="half right">
+            <h6 class="section-heading">Results</h6>
+            <div class="about-content">
+              <p class="pad-top">{{ page.results }}</p>
+            </div><!--/.about-content-->
+          </div><!--/.half.left-->
+        </div><!--/.about-wrapper-->
+      </div><!--/.container-->
+      <div class="container entry-content">
+        {{ content }}
+      </div><!--/.container-->
+    </section>
+
 
 </div>
