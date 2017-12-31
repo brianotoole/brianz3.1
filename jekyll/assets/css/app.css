@@ -872,7 +872,9 @@ template {
 
 body {
   font-family: "Lora", serif;
-  line-height: 1.45; }
+  line-height: 1.45;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Istok Web", sans-serif;
@@ -915,8 +917,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.375rem;
-  font-weight: 700; }
+  font-size: 1.375rem; }
   @media (max-width: 50rem) {
     h5,
     .h5 {
@@ -924,8 +925,7 @@ h5,
 
 h6,
 .h6 {
-  font-size: 1.125rem;
-  font-weight: 700; }
+  font-size: 1.125rem; }
   @media (max-width: 50rem) {
     h6,
     .h6 {
@@ -933,6 +933,19 @@ h6,
 
 p {
   font-size: 0.875rem; }
+
+ul, ol, dl {
+  font-size: 0.875rem; }
+
+pre {
+  padding: 20px;
+  background: #111; }
+
+code {
+  background: #111;
+  color: #1bff00;
+  font-size: 0.875rem;
+  padding: 2px; }
 
 .row {
   display: -webkit-box;
@@ -1672,22 +1685,15 @@ p {
 
 .logo-container {
   position: fixed;
-  left: 30px;
-  -webkit-animation: fadeIn 250ms ease-out;
-          animation: fadeIn 250ms ease-out;
-  -webkit-animation-delay: 20ms;
-          animation-delay: 20ms;
-  -webkit-animation-duration: 250ms;
-          animation-duration: 250ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+  left: 30px; }
   .logo-container span {
     color: #fff;
     font-weight: 700; }
   .logo-container img {
     margin: 0;
+    margin-top: -1px;
     width: 100%;
-    max-width: 150px; }
+    max-width: 140px; }
 
 .header-contact-btn {
   position: fixed;
@@ -1999,7 +2005,7 @@ body.nav-open {
       padding-right: 15px; } }
 
 .half {
-  width: calc(50% - 15px); }
+  width: 50%; }
   @media (max-width: 50rem) {
     .half {
       width: 100%; } }
@@ -2017,14 +2023,14 @@ body.nav-open {
 
 .section-hero {
   min-height: 480px;
-  background: #4F3339; }
+  background: #003C71; }
   .section-hero .hero-content {
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
     max-width: 88%;
-    -webkit-animation: fadeIn 1.5s ease-in;
-            animation: fadeIn 1.5s ease-in; }
+    -webkit-animation: fadeIn 0.5s ease-in;
+            animation: fadeIn 0.5s ease-in; }
     @media (max-width: 50rem) {
       .section-hero .hero-content {
         max-width: 100%; } }
@@ -2224,21 +2230,21 @@ body.nav-open {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 calc(33.333% - 40px);
             flex: 1 0 calc(33.333% - 40px);
-    min-height: 500px;
+    min-height: 400px;
     margin: 20px;
     padding: 50px;
     color: #fff;
-    background: #2B152C;
+    background: #0069C7;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out; }
     .posts-wrapper .post-item:nth-child(2n) {
-      background: #4F3339; }
-    .posts-wrapper .post-item:nth-child(3n) {
       background: #93353F; }
+    .posts-wrapper .post-item:nth-child(3n) {
+      background: #003C71; }
     @media (max-width: 50rem) {
       .posts-wrapper .post-item {
         -ms-flex-preferred-size: calc(100% - 40px);
             flex-basis: calc(100% - 40px);
-        min-height: 250px; } }
+        min-height: 200px; } }
     .posts-wrapper .post-item:hover, .posts-wrapper .post-item:focus {
       background: #f5f5f5;
       color: #111; }
@@ -2392,16 +2398,16 @@ body.nav-open {
   color: #111; }
 
 .bg-alt1 {
-  background: #2B152C; }
+  background: #0069C7; }
 
 .bg-alt2 {
-  background: #4F3339; }
-
-.bg-alt3 {
   background: #93353F; }
 
+.bg-alt3 {
+  background: #003C71; }
+
 .bg-alt4 {
-  background: #583830; }
+  background: #2B152C; }
 
 .font-heading {
   font-family: "Istok Web", sans-serif; }

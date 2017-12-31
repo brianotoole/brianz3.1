@@ -2,6 +2,8 @@
 body {
 	font-family: $font-body;
 	line-height: 1.45;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
   font-family: $font-heading;
@@ -46,7 +48,6 @@ h4,
 h5,
 .h5 {
 	font-size: rem(22);
-	font-weight: 700;
 	@media (max-width: $bp-md) {
 	  font-size: rem(18);
 	}
@@ -55,7 +56,6 @@ h5,
 h6,
 .h6 {
 	font-size: rem(18);
-	font-weight: 700;
    @media (max-width: $bp-md) {
      font-size: rem(16);
 	}
@@ -63,4 +63,17 @@ h6,
 
 p {
   font-size: rem(14);
+}
+ul, ol, dl {
+	font-size: rem(14);
+}
+pre {
+	padding: 20px;
+	background: $color-body;
+}
+code {
+	background: $color-body;
+	color: $color-code;
+	font-size: rem(14);
+	padding: 2px;
 }

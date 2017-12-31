@@ -34,18 +34,15 @@
 .logo-container {
   position: fixed;
   left: 30px;
-  animation: fadeIn 250ms ease-out;
-  animation-delay: 20ms;
-  animation-duration: 250ms;
-  animation-fill-mode: forwards;
   span {
     color: $color-white;
     font-weight: 700;
   }
   img {
     margin: 0;
+    margin-top: -1px;
     width: 100%;
-    max-width: 150px;
+    max-width: 140px;
   }
 }
 .header-contact-btn {
