@@ -10,7 +10,7 @@ bodyclass: project
       <div class="row hero-content">
         <div class="col-xs-12 col-sm-10">
           <h1 class="hero-title">{{ page.title }}</h1>
-          <h6 class="hero-subtitle">{{ page.subtitle }}</h6>
+          <h5 class="hero-subtitle">{{ page.subtitle }}</h5>
           <div class="hero-scroll">
             <a href="#more"><span></span></a>
           </div><!--/.hero-scroll-->
@@ -21,15 +21,21 @@ bodyclass: project
 
   <section class="project-details section-wrap group" id="more">
     <div class="container entry-content">
-        <div class="project-meta">
-            <div class="project-url">
-              <blockquote style="border-color:#{{ page.bgcolor }};">
-                <span class="lnr lnr-exit-up"></span>
-                <a href="{{ page.link }}" class="h5" style="color:#{{ page.bgcolor }};" target="_blank">View website</a>
-              </blockquote>
-            </div><!--/.project-url-->
-          </div><!--/.project-meta-->
-      {{ content }}
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+            <div class="project-meta">
+              <div class="project-url">
+                <blockquote style="border-color:#{{ page.bgcolor }};">
+                  <span class="lnr lnr-exit-up"></span>
+                  <a href="{{ page.link }}" class="h6 text-no-underline" style="color:#{{ page.bgcolor }};" target="_blank">View website</a>
+                </blockquote>
+              </div><!--/.project-url-->
+            </div><!--/.project-meta-->
+            <div class="entry-content">
+              {{ content }}
+            </div><!--/.entry-content-->
+          </div><!--/.col-->
+        </div><!--/.row-->
     </div><!--/.container-->
   </section>
 

@@ -61,6 +61,8 @@
 
  .text-no-transform {text-transform: none;}
 
+ .text-no-underline {text-decoration: none;}
+
  // Visibility
 .hidden-phone {
    @media (max-width: $bp-md) {

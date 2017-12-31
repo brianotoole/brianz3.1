@@ -885,7 +885,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1,
 .h1 {
-  font-size: 3.625rem; }
+  font-size: 3.625rem;
+  letter-spacing: -1px; }
   @media (max-width: 50rem) {
     h1,
     .h1 {
@@ -2267,6 +2268,10 @@ body.nav-open {
       background: rgba(0, 0, 0, 0.5); }
       .posts-wrapper .post-item .btn.arrow:after {
         vertical-align: middle; }
+  .posts-wrapper .post-cat {
+    padding-top: 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase; }
 
 .contact-wrapper {
   display: -webkit-box;
@@ -2477,6 +2482,9 @@ body.nav-open {
 
 .text-no-transform {
   text-transform: none; }
+
+.text-no-underline {
+  text-decoration: none; }
 
 @media (max-width: 50rem) {
   .hidden-phone {
