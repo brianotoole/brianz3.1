@@ -1,12 +1,14 @@
 // TYPOGRAPY
 body {
 	font-family: $font-body;
+	line-height: 1.45;
 }
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
   font-family: $font-heading;
-  font-weight: normal;
+	font-weight: normal;
+	line-height: 1.1;
 	word-wrap: break-word;
-	letter-spacing: 0.2px;
+	letter-spacing: -0.2px;
 }
 
 h1,
@@ -60,5 +62,5 @@ h6,
 }
 
 p {
-  font-size: rem(16);
+  font-size: rem(14);
 }

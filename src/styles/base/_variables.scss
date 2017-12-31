@@ -9,17 +9,17 @@ $color-body: #111;
 $color-white: #fff; 
 $color-gray: #f5f5f5;
 $color-black: #000;
-$color-green1: #7FA6A1;
-$color-green2: #B8D9B8;
-$color-green3: #D6EDBD;
+$color-green1: #172A40;
+$color-green2: #09504F;
+$color-green3: #D9383A;
 
 // Colors: components
 $color-link: darken($color-primary, 5%);
 $color-link-hover: darken($color-primary, 15%);
 
 // Font Stacks
-$font-heading: 'Lora', serif; 
-$font-body: 'Raleway', sans-serif; 
+$font-heading: 'Istok Web', sans-serif; 
+$font-body: 'Lora', serif; 
 $font-monospace: Menlo, Monaco, monospace;
 
 // Breakpoints, using rems

@@ -85,12 +85,13 @@
     padding-bottom: 5px;
     color: $color-white;
     font-family: $font-heading;
-    font-size: rem(18);
+    font-size: rem(14);
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     position: relative;
     text-decoration: none;
+    text-transform: uppercase;
     overflow: hidden;
     &:before {
       content: "";
