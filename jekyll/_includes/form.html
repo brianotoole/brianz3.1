@@ -1,26 +1,36 @@
 <form id="js-form">
 
-  <div class="contact-wrapper">
-    <div class="half left contact-input">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 contact-input">
       <input type="text" name="name" id="name" placeholder="Name*">
     </div>
-    <div class="half right contact-input">
+    <div class="col-xs-12 col-sm-6 contact-input">
       <input type="email" name="email" id="email" placeholder="Email*">
     </div>
 
-    <div class="half left contact-input">
+    <div class="col-xs-12 col-sm-6 contact-input">
       <input type="text" name="company" id="company" placeholder="Company">
     </div>
-    <div class="half right contact-input">
+    <div class="col-xs-12 col-sm-6 contact-input">
       <input type="tel" name="phone" id="phone" placeholder="Phone">
     </div>
 
-    <div class="full contact-input">
+    <div class="col-xs-12 contact-input">
       <textarea type="textarea" rows="4" name="message" id="message" placeholder="Your message*"></textarea>
     </div>
 
-    <button class="btn btn-transparent float-right" id="submit" type="submit" onclick="return validateRegister();">Send Message</button>
+    <div class="col-xs-12 end-xs contact-input">
+      <button class="btn arrow" id="js-form-submit" type="submit">Send Message</button>
+    </div>
     
-  </div><!--/.contact-wrapper-->
+  </div><!--/.row-->
 
 </form>
+
+<div class="form-message">
+    <div class="row">
+      <div class="grid-full">
+        <div id="js-form-message"></div>
+      </div><!--/.grid-->
+    </div><!--/.row-->
+  </div><!--/.form-message-->

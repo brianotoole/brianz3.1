@@ -281,13 +281,19 @@
     margin: 20px;
     padding: 50px;
     color: $color-white;
-    background: $color-alt1;
+    background: $color-alt3;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out;
-    &:nth-child(2n) {
+    &:nth-last-child(1) {
       background: $color-alt2;
     }
-    &:nth-child(3n) {
+    &:nth-last-child(2) {
       background: $color-alt3;
+    }
+    &:nth-last-child(3) {
+      background: $color-alt4;
+    }
+    &:first-of-type() {
+      background: $color-alt1;
     }
     @media (max-width: $bp-md) {
       flex-basis: calc(100% - 40px);

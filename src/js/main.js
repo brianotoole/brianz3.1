@@ -27,17 +27,23 @@ $(function() {
   });
 });
 
+var formSubmit = $('#js-form-submit');
+formSubmit.click(function() {
+	validateForm();
+	return false;
+});
+
 // form validation
-function validateRegister() {
+function validateForm() {
 	var email, atpos, dotpos, username;
 
-	username = $('#name').val();
+	name = $('#name').val();
 	email = $('#email').val();
 	atpos = email.indexOf('@');
 	dotpos = email.lastIndexOf('.');
 	message = $('#message').val();
 
-	if (username == null || username == '') {
+	if (name == null || name == '') {
 	$('#js-form-message').addClass('text-error text-large').text('* Please enter your name.');
 	$('#name').focus();
 	return false;

@@ -6,8 +6,8 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  //margin-right: -0.5rem;
-  //margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
 }
 
 .row.reverse {
@@ -21,8 +21,8 @@
 [class*="col-xs"] {
   box-sizing: border-box;
   flex: 0 0 auto;
-  //padding-right: 0.5rem;
-  //padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .col-xs-1 {

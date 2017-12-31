@@ -9,16 +9,20 @@ subtitle: subtitle here
 
 <section class="news-layout section-wrap">
   <div class="container">
-      <div class="posts-wrapper">
-          {% for post in site.posts %}	
-          <a href="{{ post.url }}">
-            <article class="post-item hvr-underline-from-left">
-              <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>	
-              <!-- <p class="post-cat">- {{ post.category }} -</p> -->
-              <a class="btn arrow" href="{{ post.url }}">View Article</a>
-            </article>
-          </a>
-          {% endfor %}	
-          </div><!--/.posts-wrapper-->
+      <h5 class="section-heading">Recent Work</h5>
+      {% for project in site.projects %}
+      
+      <div class="project-block hvr-underline-from-left">
+        <div class="half left">
+          <h4 class="">{{ project.title }}</h4>
+          <p>{{ project.description }}</p>
+          <a class="btn arrow" href="{{ project.url }}">Explore Project</a>
+        </div><!--/.left-->
+        <div class="half right">
+          <img src="{{site.baseurl}}/assets/images/{{project.img}}" alt="{{ project.title }}">
+        </div><!--/.right-->
+      </div><!--<!--/.project-block-->
+      
+      {% endfor %}
   </div><!--/.container-->
 </section>

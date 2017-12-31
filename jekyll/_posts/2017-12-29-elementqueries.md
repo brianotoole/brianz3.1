@@ -3,6 +3,8 @@ layout: post
 title: Element Queries in Sass
 category: development
 description: Nesting media queries within the selector is much more easier to control for scalable css architecture.
+bgcolorclass: bg-alt1
+
 ---
 
 In the past, writing css sucked! You needed to repeat yourself over and over, and eventually you ended up with a bloated sheet of repeated rules that was nearly impossible to mantain.

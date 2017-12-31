@@ -44,7 +44,7 @@
   }
   &.arrow {
     padding-left: 0;
-    font-weight: 700;
+    border: none;
     background-color: transparent;
     color: $color-body;
     transition: color 0.2s ease-in-out;
@@ -52,7 +52,7 @@
       content: "\e87a";
       font-family: Linearicons-Free;
       display: inline-block;
-      vertical-align: top;
+      vertical-align: middle;
       font-size: rem(18);
       margin-left: 10px;
       transition: margin-left 0.2s ease-in-out;

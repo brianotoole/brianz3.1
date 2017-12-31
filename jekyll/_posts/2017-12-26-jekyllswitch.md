@@ -3,7 +3,7 @@ layout: post
 title: My Switch to Jekyll
 category: development
 description: 
-bgcolorclass: bg-alt3
+bgcolorclass: bg-alt2
 ---
 
 When the term *"website redesign"* is used, most people tend to think of *creating a new look & feel of the interface* for a website. For me, I like to look at a redesign from the inside out. This means, taking a look at what currently exists and if all systems are working to maxium potential. **A redesign should be a full-stack decision... not just front-end**.

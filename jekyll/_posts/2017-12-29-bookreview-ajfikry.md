@@ -3,7 +3,7 @@ layout: post
 title: Book Review - 'The Storied Life of AJ Fikry'
 category: books
 description: The Storied Life of A.J. Fikry is about a cynical widower who lives upstairs above the bookstore he owns. After learning about his store facing the worst sales in his history, he falls into more bad news... his rare, original collection of an Edgar Allen Poe book (worth a ton of $) was stolen from his apartment. When he thinks it can't get any worse, something is deleivered to his bookstore that changes the rest of his life.
-bgcolorclass: bg-alt2
+bgcolorclass: bg-alt3
 ---
 
 The Storied Life of A.J. Fikry is about a cynical widower who lives upstairs above the bookstore he owns. After learning about his store facing the worst sales in his history, he falls into more bad news... his rare, original collection of an Edgar Allen Poe book (worth a ton of $) was stolen from his apartment. When he thinks it can't get any worse, something is deleivered to his bookstore that changes the rest of his life.
