@@ -50,6 +50,7 @@
 
 .section-hero {
   min-height: 480px;
+  background: $color-alt2;
   .hero-content {
     position: relative;
     padding-top: 160px;
@@ -73,9 +74,9 @@
     width: auto;
     bottom: 120px;
     margin-left: 15px;
-    z-index: 500;
-    a {
-      color: $color-body;
+    z-index: 100;
+    a { //if text is used
+      color: $color-white;
       font-size: rem(14);
       font-style: italic;
       text-decoration: none;
@@ -88,8 +89,8 @@
       width: 1em;
       height: 1em;
       margin-left: -9px;
-      border-left: 1px solid rgba($color-body, 0.8);
-      border-bottom: 1px solid rgba($color-body, 0.8);
+      border-left: 1px solid rgba($color-white, 0.8);
+      border-bottom: 1px solid rgba($color-white, 0.8);
       transform: rotate(-45deg);
       animation: scrollDown 1.5s infinite;
     }
@@ -133,10 +134,10 @@
 // Page-home
 .page-home {
   .section-hero {
-    background-image: url('/assets/images/home-bg-dust.png');
+    //background-image: url('/assets/images/home-bg-dust.png');
   }
   .hero-title {
-    color: $color-body;
+    //color: $color-body;
   }
 }
 
@@ -280,13 +281,13 @@
     margin: 20px;
     padding: 50px;
     color: $color-white;
-    background: $color-green1;
+    background: $color-alt1;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out;
     &:nth-child(2n) {
-      background: $color-green2;
+      background: $color-alt2;
     }
     &:nth-child(3n) {
-      background: $color-green3;
+      background: $color-alt3;
     }
     @media (max-width: $bp-md) {
       flex-basis: calc(100% - 40px);
