@@ -19,30 +19,18 @@ bodyclass: project
     </div><!--/.container-->
   </section>
 
-  <section class="project-details about-intro section-wrap group">
-    <div class="container">
-      <div class="about-wrapper">
-        <div class="half left">
-          <h6 class="section-heading">Background</h6>
-            <div class="about-content">
-              <h5 class="text-secondary text-no-transform pad-top">Overview</h5>
-              <p>{{ page.overview }}</p>
-              <h5 class="text-secondary text-no-transform pad-top">Goals</h5>
-              <p>{{ page.goals }}</p>
-            </div><!--/.about-content-->
-          </div><!--/.half.left-->
-          <div class="half right">
-            <h6 class="section-heading">Results</h6>
-            <div class="about-content">
-              <p class="pad-top">{{ page.results }}</p>
-            </div><!--/.about-content-->
-          </div><!--/.half.left-->
-        </div><!--/.about-wrapper-->
-      </div><!--/.container-->
-      <div class="container entry-content">
-        {{ content }}
-      </div><!--/.container-->
-    </section>
-
+  <section class="project-details section-wrap group" id="more">
+    <div class="container entry-content">
+        <div class="project-meta">
+            <div class="project-url">
+              <blockquote style="border-color:#{{ page.bgcolor }};">
+                <span class="lnr lnr-exit-up"></span>
+                <a href="{{ page.link }}" class="h5" style="color:#{{ page.bgcolor }};" target="_blank">View website</a>
+              </blockquote>
+            </div><!--/.project-url-->
+          </div><!--/.project-meta-->
+      {{ content }}
+    </div><!--/.container-->
+  </section>
 
 </div>
