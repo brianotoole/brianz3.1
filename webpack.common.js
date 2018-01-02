@@ -12,10 +12,10 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/js/app.js'),
 	output: {
 		filename: 'app.js',
-    path: path.resolve(__dirname, 'jekyll/assets')
+    path: path.resolve(__dirname, 'assets')
 	},
 	plugins: [
-    new CleanWebpackPlugin(['jekyll/assets/app.js', 'jekyll/assets/css'])
+    new CleanWebpackPlugin(['assets/app.js', 'assets/css'])
 	],
 	module: {
     rules: [
