@@ -5,18 +5,15 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<meta name="author" content="">
+	<meta name="author" content="@brianotoole">
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="" />
-	<meta property="og:description" content="" />
-	<meta property="og:image" content="{{ '/images/img.jpg' | prepend: site.baseurl }}" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:description" content="{{ page.description }}" />
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="">
-	<meta name="twitter:creator" content="">
-	<meta name="twitter:title" content="">
-	<meta name="twitter:description" content="">
-	<meta name="twitter:image" content="{{ '/images/img.jpg' | prepend: site.baseurl }}">
+	<meta name="twitter:site" content="{{ page.url }}">
+	<meta name="twitter:title" content="{{ page.title }}">
+	<meta name="twitter:description" content="{{ page.description }}">
 
   <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon"/>
 
