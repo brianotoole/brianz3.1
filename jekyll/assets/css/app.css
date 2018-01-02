@@ -2165,6 +2165,9 @@ body.nav-open {
     position: relative;
     margin-bottom: 0; }
 
+.project-more-wrapper .btn {
+  padding-right: 0; }
+
 .project-block-lg {
   background: #111;
   color: #fff;
