@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "webpack --config webpack.dev.js",
     "start": "webpack --watch --config webpack.dev.js",
-    "jekyll": "jekyll s --source=jekyll --destination dist",
+    "jekyll": "jekyll s --destination dist",
     "jekyll-prod": "JEKYLL_ENV=production jekyll build --source=jekyll --destination dist",
     "webpack-prod": "NODE_ENV=production webpack --config webpack.prod.js",
     "prod": "npm run webpack-prod && npm run jekyll-prod && http-server ./dist"
