@@ -12,5 +12,3 @@ title: Water Street Tampa
 subtitle: 
 description: Provided strategy for user experience, technology selection, and web development for a comprehensive website redesign
 ---
-
-test project
