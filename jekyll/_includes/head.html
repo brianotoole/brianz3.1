@@ -18,7 +18,7 @@
 	<meta name="twitter:description" content="">
 	<meta name="twitter:image" content="{{ '/images/img.jpg' | prepend: site.baseurl }}">
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon"/>
 
   {% if jekyll.environment == 'production' %} 
   <link rel="stylesheet" href="{{ '/assets/css/app.min.css' | prepend: site.baseurl }}">
@@ -29,6 +29,5 @@
   {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
 </head>
