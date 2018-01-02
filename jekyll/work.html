@@ -10,8 +10,8 @@ subtitle:
 <section class="news-layout section-wrap">
   <div class="container">
       <h5 class="section-title">Recent Work</h5>
-      {% assign project = site.projects | sort: 'date' %}
-      {% for project in site.projects %}
+      {% assign project_items = site.projects | sort: 'date' | reverse %}
+      {% for project in project_items %}
       
       <div class="project-block">
         <div class="half left">

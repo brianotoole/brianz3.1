@@ -10,8 +10,8 @@ hero: Helping brands connect with audiences through intelligent design &amp; tec
 <section class="section-wrap section-work bg-white" id="more">
   <div class="container">
       <h5 class="section-title">Recent Work</h5>
-      {% assign project = site.projects | where: "featured-home", "true" %}
-      {% for project in site.projects limit:2 %}
+      {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'date' | reverse %}
+      {% for project in project_items limit:2 %}
 
         <a href="{{ project.url }}">
         <div class="project-block">
