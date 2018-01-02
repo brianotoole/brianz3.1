@@ -4,15 +4,16 @@ title: Work
 bgcolorclass: bg-alt1
 bodyclass: page-work
 hero: Solving problems with modern technology
-subtitle: subtitle here
+subtitle: 
 ---
 
 <section class="news-layout section-wrap">
   <div class="container">
-      <h5 class="section-heading">Recent Work</h5>
+      <h5 class="section-title">Recent Work</h5>
+      {% assign project = site.projects | sort: 'date' %}
       {% for project in site.projects %}
       
-      <div class="project-block hvr-underline-from-left">
+      <div class="project-block">
         <div class="half left">
           <h4 class="">{{ project.title }}</h4>
           <p>{{ project.description }}</p>

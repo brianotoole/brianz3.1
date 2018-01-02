@@ -1,0 +1,23 @@
+---
+layout: project
+featured-home: false
+bodyclass: project
+date: 2017-11-01
+img: project-channelside.jpg
+link: http://channelsidetampa.com
+bgcolor: d1e070
+textcolor: ffffff
+title: Channelside Tampa
+subtitle: 
+description: Provided strategy for user experience, technology selection, and web development for a comprehensive website redesign
+---
+
+
+#### Objectives
+* Generate awareness and excitement for new development's in Tampa's downtown/Channelside district
+* Collect contact information from potential developers and retailers
+
+#### Work Involved
+
+
+#### Takeaway

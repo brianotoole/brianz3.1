@@ -4,10 +4,10 @@
 $(document).ready(function() {
   var trigger = $('#js-nav-toggle');
   var isClosed = false;
-  trigger.click(function() {
+  trigger.on('click', function() {
     $('#js-nav-mobile').toggleClass('nav-open');
     $('body').toggleClass('nav-open');
-    $('#js-nav-toggle').toggleClass('active');
+		$('#js-nav-toggle').toggleClass('active');
   });
 });
 
@@ -27,6 +27,7 @@ $(function() {
   });
 });
 
+// validate on formsubmit
 var formSubmit = $('#js-form-submit');
 formSubmit.click(function() {
 	validateForm();
