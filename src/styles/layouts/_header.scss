@@ -233,7 +233,7 @@ $translateX: 0;
   &:hover, &:focus {
      .line-1, .line-2, .line-3 {
         background: $color-secondary;
-        transition: 0.2s background ease-in-out;
+        transition: 0.2s all ease-in-out;
      }
      .line-1 {
         transform: translateY($height-line / 2 * -1);

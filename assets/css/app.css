@@ -1975,7 +1975,7 @@ body.nav-open {
       top: 100%; }
   .nav-toggle:hover .line-1, .nav-toggle:hover .line-2, .nav-toggle:hover .line-3, .nav-toggle:focus .line-1, .nav-toggle:focus .line-2, .nav-toggle:focus .line-3 {
     background: #ff6e6e;
-    transition: 0.2s background ease-in-out; }
+    transition: 0.2s all ease-in-out; }
   .nav-toggle:hover .line-1, .nav-toggle:focus .line-1 {
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
