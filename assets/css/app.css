@@ -2299,6 +2299,9 @@ body.nav-open {
 .entry-content h1, .entry-content .h1, .entry-content h2, .entry-content .h2, .entry-content h3, .entry-content .h3, .entry-content h4, .entry-content .h4, .entry-content h5, .entry-content .h5, .entry-content h6, .entry-content .h6 {
   margin-top: 40px; }
 
+.entry-content p, .entry-content ol, .entry-content ul, .entry-content dl {
+  font-size: 1rem; }
+
 .footer a {
   text-decoration: none; }
 
