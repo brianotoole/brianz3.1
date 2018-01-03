@@ -1944,9 +1944,11 @@ body.nav-open {
     font-size: 1.75rem;
     font-weight: 700;
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out; }
     .nav-mobile-wrap a:hover, .nav-mobile-wrap a:focus {
-      background: #ff6e6e; }
+      background: #ff6e6e;
+      color: #fafafa; }
 
 .nav-toggle {
   width: 35px;
@@ -1968,16 +1970,25 @@ body.nav-open {
     .nav-toggle .line.line-1 {
       top: 0; }
     .nav-toggle .line.line-2 {
-      top: 50%;
-      width: 29.16667px; }
+      top: 50%; }
     .nav-toggle .line.line-3 {
       top: 100%; }
+  .nav-toggle:hover .line-1, .nav-toggle:hover .line-2, .nav-toggle:hover .line-3, .nav-toggle:focus .line-1, .nav-toggle:focus .line-2, .nav-toggle:focus .line-3 {
+    background: #ff6e6e;
+    transition: 0.2s background ease-in-out; }
   .nav-toggle:hover .line-1, .nav-toggle:focus .line-1 {
     -webkit-transform: translateY(-1.5px);
-            transform: translateY(-1.5px); }
+            transform: translateY(-1.5px);
+    transition-delay: 0ms; }
+  .nav-toggle:hover .line-2, .nav-toggle:focus .line-2 {
+    transition-delay: 50ms; }
   .nav-toggle:hover .line-3, .nav-toggle:focus .line-3 {
     -webkit-transform: translateY(1.5px);
-            transform: translateY(1.5px); }
+            transform: translateY(1.5px);
+    transition-delay: 100ms; }
+  .nav-toggle.active .line-1, .nav-toggle.active .line-2, .nav-toggle.active .line-3 {
+    transition: 0.2s background ease-in-out;
+    background: #ff6e6e; }
   .nav-toggle.active .line-1 {
     -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
             transform: translateY(10px) translateX(0) rotate(45deg); }
