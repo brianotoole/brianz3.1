@@ -249,7 +249,6 @@ $translateX: 0;
   }
   &.active {
     .line-1, .line-2, .line-3 {
-      transition: 0.2s background ease-in-out;
       background: $color-secondary;
     }
     .line-1 {
