@@ -9,7 +9,7 @@ link: http://waterstreettampa.com
 bgcolor: 282f31
 textcolor: ffffff
 title: Water Street Tampa
-subtitle: 
+subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
 description: Water Street Tampa will add 1 million square feet of new retail, cultural, educational, and entertainment space at the street-level. I helped a project with global impact. 
 ---
 
@@ -24,4 +24,6 @@ Water Street Tampa will create 2 million square feet of new office space, includ
 I helped with strategy for user experience, technology selection, and web development for. The site was built mobile-first and uses WordPress with Webpack for an optimal development workflow.
 
 #### Takeaway
-The site received hundreds of views per day (most visits on mobile) and is showcased prominently across in downtown Tampa. 
+The site received hundreds of views per day (most visits on mobile) and is showcased prominently throughout downtown Tampa. 
+
+![waterstreet homepage image](/assets/images/project-wst-home.jpg)
