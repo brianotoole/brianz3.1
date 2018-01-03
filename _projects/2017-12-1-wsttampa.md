@@ -10,10 +10,12 @@ bgcolor: 282f31
 textcolor: ffffff
 title: Water Street Tampa
 subtitle: Tampa's $3 Billion Waterfront Plan Aims to Reshape Downtown
-description: Water Street Tampa will add 1 million square feet of new retail, cultural, educational, and entertainment space at the street-level. I helped a project with global impact. 
+description: Water Street Tampa will add 1 million square feet of new retail, cultural, educational, and entertainment space at the street-level. I helped plant the digital foundation for a new brand with global impact. 
 ---
 
 Water Street Tampa will create 2 million square feet of new office space, including downtown Tampa's first new office towers in nearly 25 years. The project, led by  Strategic Property Partners, will provide a vibrant vision for the future of Tampa and for the 23,000+ people who live, work, study, and visit each day.
+
+I helped plant the digital foundation for a new brand with global impact. 
 
 
 #### Objectives

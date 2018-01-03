@@ -1933,7 +1933,7 @@ body.nav-open {
 
 .nav-mobile-wrap {
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   padding-top: 100px;
   list-style-type: none; }
   .nav-mobile-wrap a {
@@ -2016,6 +2016,9 @@ body.nav-open {
 
 .left {
   padding-right: 8.5%; }
+  @media (max-width: 50rem) {
+    .left {
+      padding-right: 0; } }
 
 .section-wrap {
   padding-top: 90px;
@@ -2118,7 +2121,7 @@ body.nav-open {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .work-process-wrapper .work-process-content {
-    padding-top: 60px;
+    padding-bottom: 60px;
     padding-left: 60px;
     position: relative; }
     .work-process-wrapper .work-process-content:before {
@@ -2128,7 +2131,7 @@ body.nav-open {
       left: 0;
       line-height: 3;
       position: absolute;
-      margin-top: -8px;
+      margin-top: -12px;
       font-style: italic; }
 
 .project-interior .section-hero {
@@ -2272,6 +2275,26 @@ body.nav-open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .contact-list .contact-list-item {
+    margin-bottom: 15px;
+    font-weight: 700; }
+    @media (max-width: 50rem) {
+      .contact-list .contact-list-item {
+        border-bottom: 1px solid #D1D3D4;
+        padding-bottom: 15px; } }
 
 .entry-content h1, .entry-content .h1, .entry-content h2, .entry-content .h2, .entry-content h3, .entry-content .h3, .entry-content h4, .entry-content .h4, .entry-content h5, .entry-content .h5, .entry-content h6, .entry-content .h6 {
   margin-top: 40px; }

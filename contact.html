@@ -1,16 +1,34 @@
 ---
 layout: page
 title: Contact Me
-hero: Contact me to learn how we can best work together
+hero: Let's work together
+subtitle: Need help with a digital rebrand? Looking to your enhance your creative team? Have an investment opporunity? Whatever it is, let's work together in 2018.
 bodyclass: page-contact
 bgcolorclass: bg-alt1
 ---
 
 <section class="news-layout section-wrap">
     <div class="container">
-      <h5 class="section-title">Get in Touch</h5>
       <div class="contact-wrapper">
-        {% include form.html %}
+      <div class="half left">
+        <h6 class="section-title">How I Help</h6>
+          <div class="contact-content">
+            <p>I specialize in building full-stack web experiences using the latest in modern web development. I am passionate about crafting a custom workflow and architecture that emphasizes speed and performance.</p>
+            <p>Need help with a digital rebrand? Looking for an addition to your creative team? Have an investment opporunity? Whatever it is, let's work together in 2018.</p>
+          </div><!--/.contact-content-->
+        </div><!--/.half.left-->
+        <div class="half right">
+          <h6 class="section-title">Get in Touch</h6>
+            <ul class="contact-list">
+              <li class="contact-list-item half"><a href="https://twitter.com/brianotoole" target="_blank">Twitter</a></li>
+              <li class="contact-list-item half"><a href="https://www.quora.com/profile/Brian-OToole" target="_blank">Quora</a></li>
+              <li class="contact-list-item half"><a href="https://github.com/brianotoole/" target="_blank">Github</a></li>
+              <li class="contact-list-item half"><a href="{{site.baseurl}}/assets/images/BrianOToole_Resume.pdf" target="_blank">Resume</a></li>
+            </ul><!--/.contact-list-->
+          </div><!--/.half.right-->
+        <div class="contact-form-wrapper pad-top">
+          {% include form.html %}
+        </div>
       </div><!--<!--/.contact-wrapper-->
     </div><!--/.container-->
   </section>
