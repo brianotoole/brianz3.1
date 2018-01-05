@@ -2045,10 +2045,8 @@ body.nav-open {
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
-    max-width: 88%;
-    color: #fff;
-    -webkit-animation: fadeIn 0.5s ease-in;
-            animation: fadeIn 0.5s ease-in; }
+    max-width: 90%;
+    color: #fff; }
     @media (max-width: 50rem) {
       .section-hero .hero-content {
         max-width: 100%; } }

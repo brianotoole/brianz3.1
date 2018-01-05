@@ -85,3 +85,13 @@ $('.post-item').each(function(i) {
 	$(this).addClass('bg-alt' + num);
 	$(this).attr('data-item', i);
 });
+
+//tl.method(element, duration, vars), delay
+var tl = new TimelineMax({});
+tl
+  // hero: timeline
+	.from('.hero-title',0.5, {y: 0,autoAlpha:0,ease: Power2.easeOut})
+	.from('.hero-scroll',0.5, {autoAlpha: 0,ease: Power1.easeOut})
+  // news page: timeline 
+  .staggerFrom('.post-item', 0.5, {y: 5,autoAlpha:0,ease: Power1.easeOut}, 0.25)
+
