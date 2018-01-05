@@ -77,3 +77,11 @@ function validateForm() {
 	  return false;
 	}
 }
+
+// add different bg class name
+// ex - '.bg-alt1' to each post item
+$('.post-item').each(function(i) {
+	var num = (i % 4) + 1; //start index at 1
+	$(this).addClass('bg-alt' + num);
+	$(this).attr('data-item', i);
+});

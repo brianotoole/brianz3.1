@@ -2234,16 +2234,7 @@ body.nav-open {
     margin: 20px;
     padding: 50px;
     color: #fff;
-    background: #003C71;
     transition: background 0.2s ease-in-out, color 0.25s ease-in-out; }
-    .posts-wrapper .post-item:nth-last-child(1) {
-      background: #93353F; }
-    .posts-wrapper .post-item:nth-last-child(2) {
-      background: #003C71; }
-    .posts-wrapper .post-item:nth-last-child(3) {
-      background: #2B152C; }
-    .posts-wrapper .post-item:first-of-type {
-      background: #0069C7; }
     @media (max-width: 50rem) {
       .posts-wrapper .post-item {
         -ms-flex-preferred-size: calc(100% - 40px);
