@@ -21,8 +21,13 @@ markdown: kramdown
 
 # Build settings
 gems:
-  - octopress-minify-html
+  #- octopress-minify-html
+
+minify_html: false
 
 collections:
   projects:
-    output: true   
+    output: true  
+
+exclude:
+    - node_modules 
