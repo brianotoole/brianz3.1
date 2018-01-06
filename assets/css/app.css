@@ -1861,77 +1861,80 @@ body.nav-open {
   body.nav-open li:nth-child(1) {
     -webkit-animation: fadeIn 250ms ease-out;
             animation: fadeIn 250ms ease-out;
-    -webkit-animation-delay: 241ms;
-            animation-delay: 241ms;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
+    -webkit-animation-delay: 235ms;
+            animation-delay: 235ms;
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   body.nav-open li:nth-child(2) {
     -webkit-animation: fadeIn 250ms ease-out;
             animation: fadeIn 250ms ease-out;
-    -webkit-animation-delay: 464ms;
-            animation-delay: 464ms;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
+    -webkit-animation-delay: 440ms;
+            animation-delay: 440ms;
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   body.nav-open li:nth-child(3) {
     -webkit-animation: fadeIn 250ms ease-out;
             animation: fadeIn 250ms ease-out;
-    -webkit-animation-delay: 669ms;
-            animation-delay: 669ms;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
+    -webkit-animation-delay: 615ms;
+            animation-delay: 615ms;
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   body.nav-open li:nth-child(4) {
     -webkit-animation: fadeIn 250ms ease-out;
             animation: fadeIn 250ms ease-out;
-    -webkit-animation-delay: 856ms;
-            animation-delay: 856ms;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
+    -webkit-animation-delay: 760ms;
+            animation-delay: 760ms;
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   body.nav-open li:nth-child(5) {
     -webkit-animation: fadeIn 250ms ease-out;
             animation: fadeIn 250ms ease-out;
-    -webkit-animation-delay: 1025ms;
-            animation-delay: 1025ms;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
+    -webkit-animation-delay: 875ms;
+            animation-delay: 875ms;
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   body.nav-open li:nth-child(6) {
     -webkit-animation: fadeIn 250ms ease-out;
             animation: fadeIn 250ms ease-out;
-    -webkit-animation-delay: 1176ms;
-            animation-delay: 1176ms;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
+    -webkit-animation-delay: 960ms;
+            animation-delay: 960ms;
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   body.nav-open li:nth-child(7) {
     -webkit-animation: fadeIn 250ms ease-out;
             animation: fadeIn 250ms ease-out;
-    -webkit-animation-delay: 1309ms;
-            animation-delay: 1309ms;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
+    -webkit-animation-delay: 1015ms;
+            animation-delay: 1015ms;
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   body.nav-open li:nth-child(8) {
     -webkit-animation: fadeIn 250ms ease-out;
             animation: fadeIn 250ms ease-out;
-    -webkit-animation-delay: 1424ms;
-            animation-delay: 1424ms;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
+    -webkit-animation-delay: 1040ms;
+            animation-delay: 1040ms;
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
+  body.nav-open .nav-mobile-wrap {
+    opacity: 1; }
 
 .nav-mobile-wrap {
+  opacity: 0;
   margin: 0;
   padding: 0 15px;
   padding-top: 100px;
