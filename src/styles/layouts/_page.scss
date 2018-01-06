@@ -113,7 +113,10 @@
 // Page-specific
 // Page-interior
 .page-interior {
-  .interior-content {}
+  .interior-content {
+    position: relative; //needed for scrollMagic pin
+    background: $color-white;
+  }
   .interior-title {}
 }
 
