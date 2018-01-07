@@ -2505,6 +2505,9 @@ svg:not(:root) {
 
 .svg-web {
   stroke-dasharray: 2000; }
+  .svg-web .svg-web-gear {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%; }
 
 .svg-lock {
   stroke-width: 5px; }
