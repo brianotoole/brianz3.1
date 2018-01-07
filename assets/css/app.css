@@ -2481,9 +2481,9 @@ label {
   margin-bottom: 2px;
   color: #111; }
 
-svg:not(:root) {
-  overflow: visible; }
-
+/*svg:not(:root) {
+  overflow: visible;
+}*/
 .svg {
   position: relative;
   display: block;
@@ -2506,8 +2506,8 @@ svg:not(:root) {
 .svg-web {
   stroke-dasharray: 2000; }
   .svg-web .svg-web-gear {
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
+    -webkit-transform-origin: 49% 50%;
+            transform-origin: 49% 50%;
     -webkit-animation: spin 5s infinite linear;
             animation: spin 5s infinite linear; }
 
