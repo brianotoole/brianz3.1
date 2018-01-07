@@ -4,6 +4,7 @@ svg:not(:root) {
   overflow: visible;
 }
 .svg {
+  position: relative;
   display: block;
   width: 1em;
   height: 1em;
