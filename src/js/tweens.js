@@ -1,6 +1,6 @@
 //TimelineMax & ScrollMagic
 import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';   
-import TimelineMax from "gsap/TimelineMax";
+import { TimelineMax } from 'gsap';
 // TweenMax
 //tl.method(element, duration, vars), delay
 var tl = new TimelineMax({});
@@ -43,7 +43,7 @@ $('.svg').each(function() {
 		//scene options
 		triggerElement: this,
 		triggerHook: 0.9,
-		reverse: false
+		reverse: true
 	})
 	.setClassToggle(this, 'active') //add class to el
 	//.addIndicators({name: 'svg scene',}) //indicators; uses plugin
