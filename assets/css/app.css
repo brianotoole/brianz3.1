@@ -2033,6 +2033,18 @@ body.nav-open {
     .left {
       padding-right: 0; } }
 
+.one-third {
+  width: 33.333%; }
+  @media (max-width: 50rem) {
+    .one-third {
+      width: 100%; } }
+
+.two-third {
+  width: 66.666%; }
+  @media (max-width: 50rem) {
+    .two-third {
+      width: 100%; } }
+
 .section-wrap {
   padding-top: 90px;
   padding-bottom: 90px; }
@@ -2083,6 +2095,7 @@ body.nav-open {
               animation: scrollDown 1.5s infinite; }
 
 .section-title, .section-heading {
+  width: 100%;
   font-size: 1rem;
   margin-bottom: 50px;
   padding-bottom: 20px;
@@ -2148,6 +2161,28 @@ body.nav-open {
       position: absolute;
       margin-top: -12px;
       font-style: italic; }
+
+.grid-flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -10px;
+  padding: 0; }
+  .grid-flex-wrapper .card {
+    -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px);
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid #D1D3D4; }
+    @media (min-width: 50rem) {
+      .grid-flex-wrapper .card {
+        -ms-flex-preferred-size: calc(50% - 20px);
+            flex-basis: calc(50% - 20px); } }
 
 .project-interior .section-hero {
   background-image: none; }
@@ -2446,6 +2481,95 @@ label {
   margin-bottom: 2px;
   color: #111; }
 
+svg:not(:root) {
+  overflow: visible; }
+
+.svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  font-size: 100px;
+  margin: 0 auto 15px;
+  fill: currentColor;
+  color: transparent;
+  stroke: #111;
+  stroke-width: 4px;
+  stroke-dasharray: 2000; }
+  @media (min-width: 50rem) {
+    .svg {
+      font-size: 125px; } }
+  .svg.active {
+    animation: drawWeb 3s reverse linear;
+    visibility: visible; }
+
+.svg-web {
+  stroke-dasharray: 2000; }
+  .svg-web .svg-web-gear {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-animation: spin 5s infinite linear;
+            animation: spin 5s infinite linear; }
+
+.svg-lock .line-lg,
+.svg-lock .line-sm {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500; }
+
+.svg-lock .line-lg {
+  animation: drawLine 2s infinite linear forwards, fadeIn 2s infinite linear reverse; }
+
+.svg-lock .line-sm {
+  animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
+
+@-webkit-keyframes drawLine {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes drawLine {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes drawWeb {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: 2000; } }
+
+@keyframes drawWeb {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: 2000; } }
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px); } }
+
 .text-white {
   color: #fff; }
 
@@ -2472,6 +2596,10 @@ label {
 
 .bg-black {
   background: #000;
+  color: #fff; }
+
+.bg-body {
+  background: #111;
   color: #fff; }
 
 .bg-gray {

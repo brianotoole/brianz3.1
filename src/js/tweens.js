@@ -35,3 +35,17 @@ $('.project-block, .hero-content').each(function() {
 	//.addIndicators({name: 'fade scene',}) //indicators; uses plugin
 	.addTo(controller);
 });
+
+//loop through each el and build scene
+$('.svg').each(function() {
+	//build a scene
+	var projectScene = new ScrollMagic.Scene({
+		//scene options
+		triggerElement: this,
+		triggerHook: 0.9,
+		reverse: false
+	})
+	.setClassToggle(this, 'active') //add class to el
+	//.addIndicators({name: 'svg scene',}) //indicators; uses plugin
+	.addTo(controller);
+});

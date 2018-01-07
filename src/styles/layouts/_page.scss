@@ -40,6 +40,19 @@
     padding-right: 0;
   }
 }
+.one-third {
+  width: 33.333%;
+  @media (max-width: $bp-md) {
+    width: 100%;
+  }
+}
+
+.two-third {
+  width: 66.666%;
+  @media (max-width: $bp-md) {
+    width: 100%;
+  }
+}
 
 // Section-specific
 .section-wrap {
@@ -101,6 +114,7 @@
 }
 
 .section-title {
+  width: 100%;
   font-size: rem(16);
   margin-bottom: 50px;
   padding-bottom: 20px;
@@ -184,6 +198,22 @@
   }
 }
 
+.grid-flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -10px;
+  padding: 0;
+  .card {
+    flex-basis: calc(100% - 20px);
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid $color-border;
+    @media (min-width: $bp-md) {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+}
 
 // Project-interior
 .project-interior {

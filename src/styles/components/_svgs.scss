@@ -1,0 +1,75 @@
+// SVGs
+
+svg:not(:root) {
+  overflow: visible;
+}
+.svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  font-size: 100px;
+  margin: 0 auto 15px;
+  fill: currentColor;
+  color: transparent;
+  stroke: $color-body;
+  stroke-width: 4px;
+  stroke-dasharray: 2000;
+  @media (min-width: $bp-md) {
+    font-size: 125px;
+  }
+  &.active {
+    animation: drawWeb 3s reverse linear;
+    visibility: visible;
+  }
+}
+
+// svg web
+.svg-web {
+  stroke-dasharray: 2000;
+
+  .svg-web-top {}
+  .svg-web-gear {
+    transform-origin: 50% 50%;
+    animation: spin 5s infinite linear;
+  }
+}
+
+// svg lock
+.svg-lock {
+  
+  .line-lg,
+  .line-sm {
+    stroke-linejoin: round;
+    stroke-linecap: round; 
+    stroke-miterlimit: 10;
+    stroke-dasharray: 500; 
+    stroke-dashoffset: 500;
+  }
+  .line-lg {
+    animation: drawLine 2s infinite linear forwards,
+              fadeIn 2s infinite linear reverse;
+  }
+  .line-sm {
+    animation: drawLine 2s 1s infinite linear forwards,
+              fadeIn 2s 1s infinite linear reverse;
+  }
+}
+
+@keyframes drawLine {
+  100% {stroke-dashoffset: 0;}
+}
+
+@keyframes drawWeb {
+  from {stroke-dashoffset: 0;}
+  to {stroke-dashoffset: 2000;}
+}
+
+
+@keyframes spin {
+  to {transform: rotate(360deg);}
+}
+
+@keyframes pulse {
+  0% {transform: translateY(0)}
+	100% {transform: translateY(-1px);}
+}
