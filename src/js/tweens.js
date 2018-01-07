@@ -1,6 +1,6 @@
 //TimelineMax & ScrollMagic
 import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';   
-import { TweenMax } from 'gsap';
+//import { TweenMax } from 'gsap';
 // TweenMax
 //tl.method(element, duration, vars), delay
 var tl = new TimelineMax({});
