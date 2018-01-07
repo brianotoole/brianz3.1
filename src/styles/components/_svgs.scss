@@ -31,8 +31,8 @@ svg:not(:root) {
   .svg-web-top {}
   .svg-web-gear {
     //50% 50% not working
-    //transform-origin: 182px 155px;
-    //animation: spin 5s infinite linear;
+    transform-origin: 182px 155px;
+    animation: spin 5s infinite linear;
   }
 }
 
