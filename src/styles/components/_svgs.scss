@@ -30,7 +30,7 @@ svg:not(:root) {
 
   .svg-web-top {}
   .svg-web-gear {
-    transform-origin: 50% 50%;
+    transform-origin: center center;
     animation: spin 5s infinite linear;
   }
 }
