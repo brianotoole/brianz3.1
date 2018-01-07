@@ -7,7 +7,7 @@ var tl = new TimelineMax({});
 tl
   // news page: timeline 
 	.staggerFrom('.post-item', 0.5, {y: 5,autoAlpha:0,ease: Power1.easeOut}, 0.15)
-	.to(".svg-web-gear", 5, {rotation:360,transformOrigin:"center center", ease:Linear.easeNone, repeat:-1})
+	.to('path.svg-web-gear', 5, {rotation:360,transformOrigin:'50% 50%', ease:Linear.easeNone, repeat:-1})
 	
 
 // ScrollMagic
