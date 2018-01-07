@@ -44,7 +44,7 @@ $('.svg').each(function() {
 		//scene options
 		triggerElement: this,
 		triggerHook: 0.9,
-		reverse: true
+		reverse: false
 	})
 	.setClassToggle(this, 'active') //add class to el
 	//.addIndicators({name: 'svg scene',}) //indicators; uses plugin
