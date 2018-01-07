@@ -2481,9 +2481,9 @@ label {
   margin-bottom: 2px;
   color: #111; }
 
-/*svg:not(:root) {
-  overflow: visible;
-}*/
+svg:not(:root) {
+  overflow: visible; }
+
 .svg {
   position: relative;
   display: block;
