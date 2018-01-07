@@ -36,7 +36,7 @@ svg:not(:root) {
 
 // svg lock
 .svg-lock {
-  
+  stroke-width: 5px;
   .line-lg,
   .line-sm {
     stroke-linejoin: round;

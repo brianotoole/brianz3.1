@@ -2510,19 +2510,19 @@ svg:not(:root) {
     -webkit-animation: spin 5s infinite linear;
             animation: spin 5s infinite linear; }
 
-.svg-lock .line-lg,
-.svg-lock .line-sm {
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  stroke-miterlimit: 10;
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500; }
-
-.svg-lock .line-lg {
-  animation: drawLine 2s infinite linear forwards, fadeIn 2s infinite linear reverse; }
-
-.svg-lock .line-sm {
-  animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
+.svg-lock {
+  stroke-width: 5px; }
+  .svg-lock .line-lg,
+  .svg-lock .line-sm {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500; }
+  .svg-lock .line-lg {
+    animation: drawLine 2s infinite linear forwards, fadeIn 2s infinite linear reverse; }
+  .svg-lock .line-sm {
+    animation: drawLine 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
 
 @-webkit-keyframes drawLine {
   100% {
