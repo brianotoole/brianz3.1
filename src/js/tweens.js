@@ -30,7 +30,7 @@ $('.hero-content').each(function() {
 	var projectScene = new ScrollMagic.Scene({
 		//scene options
 		triggerElement: this.children[0],
-		triggerHook: 0,
+		triggerHook: 0.9,
 		reverse: false
 	})
 	.setClassToggle(this, 'fadeIn') //add class to el
