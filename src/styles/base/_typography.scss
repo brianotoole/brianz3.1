@@ -2,21 +2,22 @@
 body {
 	font-family: $font-body;
 	line-height: 1.45;
+	font-weight: 100;
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 }
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
   font-family: $font-heading;
-	font-weight: normal;
+	font-weight: 500;
 	line-height: 1.1;
 	word-wrap: break-word;
-	letter-spacing: -0.2px;
+	//letter-spacing: -0.2px;
 }
 
 h1,
 .h1 {
 	font-size: rem(58);
-	letter-spacing: -1px;
+	//letter-spacing: -1px;
 	@media (max-width: $bp-md) {
 		font-size: rem(34);
 	}
