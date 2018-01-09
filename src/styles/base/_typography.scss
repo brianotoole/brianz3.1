@@ -11,13 +11,13 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
 	font-weight: 500;
 	line-height: 1.1;
 	word-wrap: break-word;
-	//letter-spacing: -0.2px;
+	letter-spacing: 0.25px;
 }
 
 h1,
 .h1 {
 	font-size: rem(58);
-	//letter-spacing: -1px;
+	letter-spacing: 0.5px;
 	@media (max-width: $bp-md) {
 		font-size: rem(34);
 	}
@@ -64,10 +64,10 @@ h6,
 }
 
 p {
-  font-size: rem(14);
+  font-size: rem(16);
 }
 ul, ol, dl {
-	font-size: rem(14);
+	font-size: rem(16);
 }
 pre {
 	padding: 20px;

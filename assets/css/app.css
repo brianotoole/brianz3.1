@@ -809,11 +809,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "freight-text-pro", serif;
   font-weight: 500;
   line-height: 1.1;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  letter-spacing: 0.25px; }
 
 h1,
 .h1 {
-  font-size: 3.625rem; }
+  font-size: 3.625rem;
+  letter-spacing: 0.5px; }
   @media (max-width: 50rem) {
     h1,
     .h1 {
@@ -860,10 +862,10 @@ h6,
       font-size: 1rem; } }
 
 p {
-  font-size: 0.875rem; }
+  font-size: 1rem; }
 
 ul, ol, dl {
-  font-size: 0.875rem; }
+  font-size: 1rem; }
 
 pre {
   padding: 20px;
