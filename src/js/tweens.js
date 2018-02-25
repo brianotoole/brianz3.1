@@ -13,8 +13,36 @@ var controller = new ScrollMagic.Controller();
 
 
 
-// FadeInHero
+//Pin Intro Hero
+var pinIntroScene = new ScrollMagic.Scene({
+	triggerElement: '.section-hero',
+	triggerHook: 0,
+	duration: '100%'
+})
+.setPin('.section-hero', {pushFollowers: false})
+.addTo(controller);
+
+// FadeInNav
 // when scrolled to triggerElement return a tween to timeline
+/*
+function fadeInNavItems() {
+	tl.add(
+		TweenMax.from('.logo-container', 0.2, {
+			autoAlpha: 0,
+			x: -5,
+			ease: Power1.easeOut
+		})
+	);
+	tl.add(
+		TweenMax.from('.header-contact-btn', 0.2, {
+			autoAlpha: 0,
+			x: 5,
+			ease: Power1.easeOut
+		})
+	);
+}
+*/
+
 function fadeInHero() {
 	//loop through each el and build scene
 	$('.hero-content').each(function() {
@@ -31,7 +59,7 @@ function fadeInHero() {
 		.addTo(controller);
 		return tl
 		.from(this, 0.8, {y: 5,autoAlpha:0,ease: Linear.easeNone})
-		.from('.hero-scroll', 0.5, {autoAlpha:0,ease: Linear.easeNone})
+		.from('.hero-scroll', 0.8, {autoAlpha:0,ease: Linear.easeNone})
 	});
 }
 
@@ -42,12 +70,12 @@ function staggerNewsItems() {
 		//scene options
 		triggerElement: '.post-item',
 		triggerHook: 0.9,
-		reverse: true
+		reverse: false
 	})
-		.setTween(tl)
+		.setTween(tl1)
 		//.addIndicators() //debug only
 		.addTo(controller);
-	return tl.staggerFrom('.post-item', 0.5, {y: 5,autoAlpha:0,ease: Power1.easeOut}, 0.15)
+	return tl1.staggerFrom('.post-item', 0.5, {y: 5,autoAlpha:0,ease: Power1.easeOut}, 0.15)
 }
 
 
@@ -67,21 +95,14 @@ function drawSvg() {
 	});
 }
 
-fadeInHero();
-drawSvg();
+// On ready
+$(function () {
+	//fadeInNavItems();
+	fadeInHero();
+	drawSvg();
+  // If News page
+	if ($(".page-news").length > 0) {
+		staggerNewsItems();
+	}
+});
 
-// If News page
-if ($(".page-news").length > 0) {
-  staggerNewsItems();
-}
-
-
-
-//pin the intro
-var pinIntroScene = new ScrollMagic.Scene({
-	triggerElement: '.section-hero',
-	triggerHook: 0,
-	duration: '100%'
-})
-.setPin('.section-hero', {pushFollowers: false})
-.addTo(controller);
