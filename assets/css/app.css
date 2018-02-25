@@ -1986,6 +1986,7 @@ body.nav-open {
   min-height: 480px;
   background: #004654; }
   .section-hero .hero-content {
+    visibility: hidden;
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
@@ -2000,9 +2001,8 @@ body.nav-open {
   .section-hero .hero-scroll {
     position: absolute;
     width: auto;
-    bottom: 120px;
     margin-left: 15px;
-    z-index: 100; }
+    z-index: 1; }
     .section-hero .hero-scroll a {
       color: #fff;
       font-size: 0.875rem;

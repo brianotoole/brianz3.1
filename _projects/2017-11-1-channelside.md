@@ -5,7 +5,7 @@ bodyclass: project
 date: 2017-11-01
 img: project-channelside.jpg
 link: http://channelsidetampa.com
-bgcolor: d1e070
+bgcolor: 555555
 textcolor: ffffff
 title: Channelside Tampa
 subtitle: 
@@ -19,3 +19,6 @@ description: Provided strategy for user experience, technology selection, and we
 
 #### Work Involved
 I was involved with the user experience design and website build using WordPress and a custom theme with Webpack as the build tool for workflow optimizations. 
+
+
+

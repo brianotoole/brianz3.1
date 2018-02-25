@@ -68,6 +68,7 @@
   min-height: 480px;
   background: $color-alt3;
   .hero-content {
+    visibility: hidden; //vibible added with tween
     position: relative;
     padding-top: 160px;
     padding-bottom: 110px;
@@ -87,9 +88,9 @@
   .hero-scroll {
     position: absolute;
     width: auto;
-    bottom: 120px;
+    //bottom: 120px;
     margin-left: 15px;
-    z-index: 100;
+    z-index: 1;
     a { //if text is used
       color: $color-white;
       font-size: rem(14);
