@@ -2142,7 +2142,8 @@ body.nav-open {
   .project-block a {
     text-decoration: none; }
   .project-block * {
-    text-transform: none; }
+    text-transform: none;
+    color: #111; }
   .project-block img {
     position: relative;
     margin-bottom: 0; }
