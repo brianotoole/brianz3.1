@@ -102,12 +102,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #071102;
+  color: #004b5a;
   text-decoration: underline;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover, a:focus {
-    color: black; }
+    color: #002027; }
 
 a:not([href]):not([tabindex]) {
   text-decoration: none; }
@@ -158,7 +158,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #ff6e6e;
+  color: #D9A318;
   text-align: left;
   caption-side: bottom; }
 
@@ -1741,14 +1741,14 @@ code {
       left: 50%;
       right: 50%;
       bottom: 0;
-      background: #ff6e6e;
+      background: #D9A318;
       height: 2px;
       transition-property: left, right;
       transition-duration: 0.3s;
       transition-timing-function: ease-out; }
     .nav-primary a:hover {
       text-decoration: none;
-      color: #ff6e6e; }
+      color: #D9A318; }
     .nav-primary a:hover:before {
       left: 0;
       right: 0; }
@@ -1879,7 +1879,7 @@ body.nav-open {
     text-decoration: none;
     transition: background 0.2s ease-in-out, color 0.2s ease-in-out; }
     .nav-mobile-wrap a:hover, .nav-mobile-wrap a:focus {
-      background: #ff6e6e;
+      background: #D9A318;
       color: #fafafa; }
 
 .nav-toggle {
@@ -1906,7 +1906,7 @@ body.nav-open {
     .nav-toggle .line.line-3 {
       top: 100%; }
   .nav-toggle:hover .line-1, .nav-toggle:hover .line-2, .nav-toggle:hover .line-3, .nav-toggle:focus .line-1, .nav-toggle:focus .line-2, .nav-toggle:focus .line-3 {
-    background: #ff6e6e;
+    background: #D9A318;
     transition: 0.2s all ease-in-out; }
   .nav-toggle:hover .line-1, .nav-toggle:focus .line-1 {
     -webkit-transform: translateY(-1.5px);
@@ -1919,7 +1919,7 @@ body.nav-open {
             transform: translateY(1.5px);
     transition-delay: 100ms; }
   .nav-toggle.active .line-1, .nav-toggle.active .line-2, .nav-toggle.active .line-3 {
-    background: #ff6e6e; }
+    background: #D9A318; }
   .nav-toggle.active .line-1 {
     -webkit-transform: translateY(10px) translateX(0) rotate(45deg);
             transform: translateY(10px) translateX(0) rotate(45deg); }
@@ -1984,7 +1984,7 @@ body.nav-open {
 
 .section-hero {
   min-height: 480px;
-  background: #003C71; }
+  background: #004654; }
   .section-hero .hero-content {
     position: relative;
     padding-top: 160px;
@@ -2082,7 +2082,7 @@ body.nav-open {
     padding-left: 60px;
     position: relative; }
     .work-process-wrapper .work-process-content:before {
-      color: #ff6e6e;
+      color: #D9A318;
       content: attr(data-title);
       font-size: 0.875rem;
       left: 0;
@@ -2215,7 +2215,7 @@ body.nav-open {
       .posts-wrapper .post-item:hover *, .posts-wrapper .post-item:focus * {
         color: #111; }
       .posts-wrapper .post-item:hover .btn.arrow, .posts-wrapper .post-item:focus .btn.arrow {
-        color: #ff6e6e;
+        color: #D9A318;
         background: black; }
         .posts-wrapper .post-item:hover .btn.arrow:after, .posts-wrapper .post-item:focus .btn.arrow:after {
           margin-left: 14px; }
@@ -2282,7 +2282,7 @@ body.nav-open {
   padding: 80px 0;
   transition: background 0.25s ease-in-out; }
   .footer-link-wrap:hover, .footer-link-wrap:focus {
-    background: #ff6e6e;
+    background: #006073;
     color: #fff; }
 
 .footer-copy {
@@ -2300,7 +2300,7 @@ body.nav-open {
   font-family: "proxima-nova", sans-serif;
   font-size: 0.875rem;
   color: #fff;
-  background-color: #0f2805;
+  background-color: #006073;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -2309,21 +2309,21 @@ body.nav-open {
   vertical-align: middle;
   white-space: nowrap; }
   .btn.primary {
-    background-color: #0f2805;
+    background-color: #006073;
     transition: all 0.2s linear; }
     .btn.primary:hover {
       color: #fff;
-      background-color: black; }
+      background-color: #002027; }
   .btn.secondary {
-    background-color: #ff6e6e;
+    background-color: #D9A318;
     transition: all 0.2s linear; }
     .btn.secondary:hover {
       color: #fff;
-      background-color: #ff2222; }
+      background-color: #946f10; }
   .btn.white {
     background-color: #fff;
     transition: all 0.2s linear;
-    color: #0f2805; }
+    color: #006073; }
     .btn.white:hover {
       color: #fff;
       background-color: #d9d9d9; }
@@ -2352,7 +2352,7 @@ body.nav-open {
       margin-left: 10px;
       transition: margin-left 0.2s ease-in-out; }
     .btn.arrow:hover {
-      color: #ff6e6e; }
+      color: #D9A318; }
       .btn.arrow:hover:after {
         margin-left: 14px; }
 
@@ -2366,11 +2366,11 @@ select {
   padding: 15px 10px;
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: "freight-text-pro", serif;
   background: #fff;
-  color: #111;
-  border: 2px solid #111;
+  color: #000;
+  border: 1px solid #D1D3D4;
   border-radius: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2381,7 +2381,7 @@ select {
   textarea:focus,
   select:active,
   select:focus {
-    border-color: #ff6e6e; }
+    border-color: #D9A318; }
 
 @media (min-width: 50rem) {
   textarea {
@@ -2504,10 +2504,10 @@ svg:not(:root) {
   color: #fff; }
 
 .text-primary {
-  color: #0f2805; }
+  color: #006073; }
 
 .text-secondary {
-  color: #ff6e6e; }
+  color: #D9A318; }
 
 .text-body {
   color: #111; }
@@ -2517,11 +2517,11 @@ svg:not(:root) {
   color: #111; }
 
 .bg-primary {
-  background: #0f2805;
+  background: #006073;
   color: #fff; }
 
 .bg-secondary {
-  background: #ff6e6e;
+  background: #D9A318;
   color: #111; }
 
 .bg-black {
@@ -2537,16 +2537,16 @@ svg:not(:root) {
   color: #111; }
 
 .bg-alt1 {
-  background: #0069C7; }
+  background: #005769; }
 
 .bg-alt2 {
-  background: #93353F; }
+  background: #004f5f; }
 
 .bg-alt3 {
-  background: #003C71; }
+  background: #004654; }
 
 .bg-alt4 {
-  background: #2B152C; }
+  background: #003e4a; }
 
 .font-heading {
   font-family: "freight-text-pro", serif; }
@@ -2662,7 +2662,7 @@ svg:not(:root) {
   left: 0;
   right: 100%;
   top: 0;
-  background: #ff6e6e;
+  background: #D9A318;
   height: 2px;
   transition-property: right;
   transition-duration: 0.3s;

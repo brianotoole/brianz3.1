@@ -11,11 +11,11 @@ select {
   padding: 15px 10px;
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: rem(14);
+  font-size: rem(16);
   font-family: $font-heading;
   background: $color-white;
-  color: $color-body;
-  border: 2px solid $color-body;
+  color: $color-black;
+  border: 1px solid $color-border;
   border-radius: 0;
   appearance: none;
   transition: all 0.2s ease-in-out;
