@@ -1,15 +1,19 @@
-//TimelineMax & ScrollMagic
-import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';   
-//import { TweenMax } from 'gsap';
+// Uses GSAP (TweenMax) + ScrollMagic
+import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+import TweenMax from 'gsap/src/uncompressed/TweenMax';
+import TimelineMax from 'gsap/src/uncompressed/TimelineMax'; 
+
 // TweenMax
 //tl.method(element, duration, vars), delay
-/*
+
 var tl = new TimelineMax({});
 tl
   // news page: timeline 
 	.staggerFrom('.post-item', 0.5, {y: 5,autoAlpha:0,ease: Power1.easeOut}, 0.15)
 	//.to('path.svg-web-gear', 5, {rotation:360,transformOrigin:'50% 50%', ease:Linear.easeNone, repeat:-1})
-*/
+
 
 // ScrollMagic
 // Init

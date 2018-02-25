@@ -40,7 +40,7 @@ module.exports = merge(common, {
     new DashboardPlugin(),
     new BrowserSyncPlugin({
       notify: false,
-      host: '127.0.0.1', // or localhost
+      host: 'localhost',
       port: 4000, // this is the port you develop on. Can be anything.
       logLevel: 'info',
       files: [
@@ -58,5 +58,14 @@ module.exports = merge(common, {
         return getPath('css/app.css').replace('css/js', 'css');
       },
     }),
-  ]
+  ],
+  resolve: {
+    alias: {
+        "TimelineMax": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
+        "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
+        "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
+        "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
+        "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js')
+    },
+  },
 });
