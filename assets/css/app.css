@@ -2293,6 +2293,21 @@ body.nav-open {
   font-size: 0.75rem;
   letter-spacing: 5px; }
 
+.pre-loader {
+  position: absolute;
+  top: 530px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  overflow: hidden;
+  z-index: 1;
+  background: transparent; }
+  .pre-loader.is-loading {
+    position: absolute;
+    overflow: hidden;
+    background: #D9A318;
+    z-index: 1; }
+
 .btn {
   margin: 0;
   margin-top: 10px;

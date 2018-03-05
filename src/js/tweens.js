@@ -12,6 +12,14 @@ var tl1 = new TimelineMax();
 var controller = new ScrollMagic.Controller();
 
 
+$(document).ready(function () {
+	tl
+	  .set('.pre-loader', {className:"+=is-loading"})
+		.fromTo('.is-loading', 0.25, {width:"0%"}, {width: "100%", ease: Power0.easeNone })
+		//.fromTo('.is-loading', 0.25, {width: "100%"}, {backgroundColor: "white",width: "0%", ease: Power0.easeNone})
+		.set('.pre-loader', {className:"-=is-loading"})
+});
+
 
 //Pin Intro Hero
 var pinIntroScene = new ScrollMagic.Scene({
@@ -58,6 +66,8 @@ function fadeInHero() {
 		//.addIndicators({name: 'fade scene',}) //indicators; uses plugin
 		.addTo(controller);
 		return tl
+		//.set('body', {className:'+=loading'})
+		//.set('body', {className:'-=loading'})
 		.from(this, 0.8, {y: 5,autoAlpha:0,ease: Linear.easeNone})
 		.from('.hero-scroll', 0.8, {autoAlpha:0,ease: Linear.easeNone})
 	});

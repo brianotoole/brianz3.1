@@ -395,3 +395,19 @@
   letter-spacing: 5px;
 }
 
+.pre-loader {
+  position: absolute;
+  top: 530px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  overflow: hidden;
+  z-index: 1;
+  background: transparent;
+ &.is-loading {
+    position: absolute;
+    overflow: hidden;
+    background: $color-secondary;
+    z-index: 1;
+  }
+}
