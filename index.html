@@ -12,7 +12,7 @@ hero: Helping brands connect with audiences through intelligent design &amp; tec
 <section class="section-wrap section-work bg-white" id="more">
   <div class="container">
       <h5 class="section-title">Recent Work</h5>
-      {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'date' | reverse %}
+      {% assign project_items = site.projects | where: "featured-home", "true" | sort: 'order' %}
       {% for project in project_items limit:2 %}
 
         <a href="{{ project.url }}">
