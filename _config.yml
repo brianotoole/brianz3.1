@@ -23,11 +23,14 @@ markdown: kramdown
 gems:
   #- octopress-minify-html
 
-minify_html: false
+#minify_html: false
+
+permalinks: pretty
 
 collections:
   projects:
     output: true  
+    permalink: /:collection/:name
 
 exclude:
     - node_modules 
